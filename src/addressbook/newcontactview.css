@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: #4FC3F7;
+    -fx-text-fill: #fff;
+}
+.mainWindow {
+    -fx-border-color:  #4FC3F7;
+    -fx-border-width: 10px;
+    -fx-background-color: #fff;
+    -fx-font-family: Roboto;
+}
+.addTitle {
+    -fx-font-size: 2em;
+}
+.newContactPane {
+    -fx-background-color: #4ec3f5;
+}

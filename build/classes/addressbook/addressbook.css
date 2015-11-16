@@ -1,0 +1,55 @@
+@font-face {
+    src: url(fonts/Roboto.ttf);
+}
+Label {
+    -fx-text-fill: #fff;
+}
+.textField{
+    -fx-text-fill: #333;
+}
+.mainWindow {
+    -fx-border-color:  #4FC3F7;
+    -fx-border-width: 10px;
+    -fx-background-color: #fff;
+    -fx-font-family: Roboto-Light;
+}
+.fieldlabels {
+    -fx-text-fill: #BDBDBD;
+    -fx-alignment: center-right;
+}
+.button {
+    -fx-background-color: #4FC3F7;
+    -fx-text-fill: #fff;
+}
+.table-view .column-header, .table-view .filler  {
+    -fx-background-color: #4FC3F7;
+
+}
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #29B6F6;
+}
+.addressbooktitle {
+    -fx-text-fill: #fff;
+    -fx-font-size: 2em;
+    -fx-text-alignment: center;
+
+}
+.table-view:focused  {
+    -fx-background-color: #4FC3F7;
+}
+.table-view:focused .table-row-cell:filled:focused {
+    -fx-background-color: #fff;
+}
+.textfield{
+    -fx-padding: 0 0 0 20px;
+}
+.details-label {
+    -fx-text-fill: #000;
+    -fx-font-size: 1.4em;
+}
+.pane {
+    -fx-background-color: #4ec3f5;
+}

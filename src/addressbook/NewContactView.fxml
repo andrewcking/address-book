@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="500.0" styleClass="mainWindow" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addressbook.NewContactController">
+    <stylesheets>
+        <URL value="@newcontactview.css" />
+    </stylesheets>
+   <children>
+      <GridPane layoutX="72.0" layoutY="65.0" vgap="5.0" AnchorPane.topAnchor="65.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="First Name" />
+            <Label text="Middle Name" GridPane.rowIndex="1" />
+            <Label text="Last Name" GridPane.rowIndex="2" />
+            <Label text="Home Phone" GridPane.rowIndex="3" />
+            <Label text="Work Phone" GridPane.rowIndex="4" />
+            <Label text="Home Address" GridPane.rowIndex="5" />
+            <Label text="Work Address" GridPane.rowIndex="6" />
+            <Label text="Personal Email" GridPane.rowIndex="7" />
+            <Label text="Work Email" GridPane.rowIndex="8" />
+            <TextField fx:id="firstNameField" GridPane.columnIndex="1" />
+            <TextField fx:id="middleNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="homePhoneField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="workPhoneField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="homeAddressField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="workAddressField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="personalEmailField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="workEmailField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <HBox layoutX="316.0" layoutY="400.0" spacing="25.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Button fx:id="okayButton" layoutX="298.0" layoutY="393.0" mnemonicParsing="false" onAction="#actionOk" text="Okay" />
+            <Button fx:id="cancelButton" layoutX="356.0" layoutY="393.0" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" />
+         </children>
+      </HBox>
+      <Pane layoutX="-50.0" layoutY="-48.0" prefHeight="50.0" prefWidth="480.0" styleClass="newContactPane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="178.0" layoutY="19.0" styleClass="addTitle" text="Add Contact" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
